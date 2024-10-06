@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Layout Example</title>
+    <style>
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+
+      
+      body,
+      html {
+        height: 100%;
+      }
+
+
+     
+      .header {
+        background-color: rgb(11, 206, 249);
+        height: 9vh; 
+        width: 100vw; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+
+      
+      .main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /fr means fraction/
+        height: 90px; 
+      }
+
+
+      .sideblocks1 > div {
+        background-color: #39a8db;
+        height: 150px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        color: white;
+      }
+
+
+     
+      .block2 {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+      }
+
+
+      .sideblocks2 > div {
+        background-color: #f9c60c;
+        height: 50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="header">preetham</div>
+
+
+    
+    <div class="main">
+      
+      <div class="sideblocks1">
+        <div>
+            <ul>
+                <p><u>SKILLS</u></p>
+                <li>Html and Css</li>
+                <li>Speed typing</li>
+                <li>basic editing</li>
+            </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="https://google.com" target="_blank" rel="noopener noreferrer" >Google</a>
+            </li>
+            <li>
+              <a href="https://sdmit.in/" target="_blank" rel="noopener noreferrer" >sdmit</a>
+            </li>
+          </ul>
+        </div>
+        <div>AD</div>
+      </div>
+
+
+      
+      <div class="block2" style="padding:10px 10px"><b>My self is preetham<br>I am studing in SDM college cource B.Voc.Software and Application Development my hobbies are playing vollyball,video games,waching movies and anime</b></div>
+
+
+      
+      <div class="sideblocks2">
+        <div><img src="2.jpg"height="225px" alt="!" width="250px"></div>
+        <div>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zqvSlNo9baI?si=Sa0WvgZ5_-9aIeU3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
